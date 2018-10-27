@@ -15,6 +15,9 @@ pipeline {
          beforeAgent true
          branch 'master'
       }
+      input {
+        message "Should we continue?"
+      }
       steps {
          echo "TODO - build and push image"
       }
